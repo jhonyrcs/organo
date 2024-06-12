@@ -1,0 +1,16 @@
+{
+  "extends": ["react-app"],
+  "plugins": ["react"],  // Mantenha essa linha
+  "rules": {
+    // ... outras regras ESLint
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.{js,jsx}"],  // Ajuste o padrão de arquivo conforme necessário
+      "rules": {
+        "react/jsx-uses-vars": "warn",  // Adicione suas regras react desejadas aqui
+        "react/jsx-uses-react": "warn"
+      }
+    }
+  ]
+}
